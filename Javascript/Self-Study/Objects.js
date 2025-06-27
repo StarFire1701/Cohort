@@ -63,9 +63,65 @@ let myobj1 ={
 // console.log(typeof(myobj1.name)) // interesting
 // console.log(myobj1.clg_life)
 // console.log(typeof(myobj1.clg_life)) // interesting
-Object.freeze(myobj1)
-myobj1.has_gf=true
-console.log(myobj1)
+// 
+
+// Freezing of key value
+// Object.freeze(myobj1)
+// myobj1.has_gf=true
+// console.log(myobj1)
+
+let myobj2 ={
+    name:"Rohit",
+    age: 21,
+    likes: "cricket",
+    has_gf: true,
+    had_gf: true,
+    had_crush: "yes",
+    clg_life: {
+        friend_name: "Saloni",
+        age: 20,
+        likes: "Beauty Parlour",
+    }
+};
+// let obj3={myobj1,myobj2}
+// console.log(obj3)  This creates problem as each object is treated as separate key value
+
+// const obj3=Object.assign({},myobj1,myobj2)
+// Here myobj2 has same properties with same name and hence it will override the properties of myobj1.Also it creates a shallow copy of objects.
+// obj3.has_gf=false
+// console.log(obj3)
+// console.log(myobj2)
+//This does not affect as we trying to modify primitives. Primitives dont get affected it is the non primitves that only get affected.
+
+
+// const obj3={...myobj1,...myobj2}
+// console.log(obj3)// This also overrides in case of same values.
+
+console.log(Object.keys(myobj1)) // Returns a 1D array
+console.log(Object.values(myobj1)) // Returns a 1D array
+console.log(Object.entries(myobj1)) //  Basically returns a 2D array with 1D array for every single value, Like [['name','Raj'],['age',22]]
+// console.log(Object.hasOwn(myobj1,'name'))
+
+//Object Destructuring
+
+let tempobj = {
+    language:"Javascript",
+    course: "Chai-aur-code Cohort",
+    course_instructor: "Hitesh Sir and Piyush Sir"
+};
+
+const{language:programming_lang}=tempobj
+console.log(programming_lang)
+
+// function loginusermessage(username){
+//     return `${username} just logged in`
+// }
+// console.log(loginusermessage()) So it is important to pass arguments otherwise this will give undefined just logged in.
+
+
+
+
+
 
 
 
