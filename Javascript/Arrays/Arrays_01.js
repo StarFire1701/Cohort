@@ -37,13 +37,33 @@ const nums=[1,2,3,4,5,6,7]
 // let a=21
 // console.log(Array.isArray(arr))
 // console.log(Array.isArray(a))
-let arr=[1,2,3,4,5,6,7,8,9]
-//     =[0,1,2,3,4,5,6,7,8]
-//     =[1,2,4,5,]
+// let arr=[1,2,3,4,5,6,7,8,9]
+// //     =[0,1,2,3,4,5,6,7,8]
+// //     =[1,2,4,5,]
 
-// const checkfunc=(currentvalue)=>{currentvalue>5}
-arr.copyWithin(2,3,5)
+// // const checkfunc=(currentvalue)=>{currentvalue>5}
+// arr.copyWithin(2,3,5)
+// console.log(arr)
+// console.log(arr.every(function(currentvalue){
+//     return currentvalue>5
+// }))
+
+
+
+let arr = [1,2,3,4,5,6,7,8,9,10];
+// let newarr=arr.filter((element)=>{
+//    return element>3;
+// })
+// console.log(arr)
+// console.log(newarr)
+
+// newarr[0]=2;
+// console.log(arr)
+// console.log(newarr)
+
+let newarr=arr.filter(()=>true)
 console.log(arr)
-console.log(arr.every(function(currentvalue){
-    return currentvalue>5
-}))
+console.log(newarr)
+newarr[2]=-1
+console.log(arr)
+console.log(newarr)
