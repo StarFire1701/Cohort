@@ -60,10 +60,10 @@ let myobj1 ={
         likes: "Kdrama",
     }
 };
-// console.log(typeof(myobj1.name)) // interesting
-// console.log(myobj1.clg_life)
-// console.log(typeof(myobj1.clg_life)) // interesting
-// 
+console.log(typeof(myobj1.name)) // interesting
+console.log(myobj1.clg_life)
+console.log(typeof(myobj1.clg_life)) // interesting
+
 
 // Freezing of key value
 // Object.freeze(myobj1)

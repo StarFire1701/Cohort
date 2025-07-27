@@ -9,3 +9,5 @@ const max = arr.reduce((acc,user) =>
     user.stock>acc.stock?user:acc
 )
 console.log(max.name)
+
+
